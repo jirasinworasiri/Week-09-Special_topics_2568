@@ -1,0 +1,213 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe c:\Users\horiz\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM8 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\jirasin Worasiri\lab9\Week-09-Special_topics_2568\HelloWorld\build\HelloWorld.elf C:\jirasin Worasiri\lab9\Week-09-Special_topics_2568\HelloWorld\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'c:\Users\horiz\esp\v5.5.1\esp-idf\tools\idf.py'
+$�"%=5
+[0;32mI (41) �ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  2 2025 09:15:02[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a918h ( 43288) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a940 vaddr=3ffb0000 size=02450h (  9296) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001cd98 vaddr=40080000 size=03280h ( 12928) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=152f0h ( 86768) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=00035318 vaddr=40083280 size=0a284h ( 41604) load[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003f5a4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (167) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (167) boot: Disabling RNG early entropy source...[0m
+[0;32mI (178) cpu_start: Multicore app[0m
+[0;32mI (187) cpu_start: Pro cpu start user code[0m
+[0;32mI (187) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (187) app_init: Application information:[0m
+[0;32mI (187) app_init: Project name:     HelloWorld[0m
+[0;32mI (191) app_init: App version:      9bc9b1a[0m
+[0;32mI (195) app_init: Compile time:     Oct  2 2025 09:14:38[0m
+[0;32mI (200) app_init: ELF file SHA256:  1abbd4351...[0m
+[0;32mI (204) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (208) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (212) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (216) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (220) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (226) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (231) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (236) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (242) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (247) heap_init: At 4008D504 len 00012AFC (74 KiB): IRAM[0m
+[0;32mI (254) spi_flash: detected chip: generic[0m
+[0;32mI (256) spi_flash: flash io: dio[0m
+[0;33mW (259) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (272) main_task: Started on CPU0[0m
+[0;32mI (282) main_task: Calling app_main()[0m
+[0;32mI (282) LED_BREATH: LED PWM initialization completed[0m
+[0;32mI (282) main_task: Returned from app_main()[0m
+[0;32mI (1102) LED_BREATH: Random: 0 1 1[0m
+[0;32mI (2012) LED_BREATH: Random: 0 1 0[0m
+[0;32mI (2922) LED_BREATH: Random: 0 0 0[0m
+[0;32mI (4232) LED_BREATH: Random: 0 1 1[0m
+[0;32mI (5142) LED_BREATH: Random: 1 1 1[0m
+[0;32mI (6452) LED_BREATH: Random: 0 1 0[0m
+[0;32mI (6952) LED_BREATH: Random: 0 1 0[0m
+[0;32mI (7862) LED_BREATH: Random: 1 1 0[0m
+[0;32mI (9582) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (10892) LED_BREATH: Random: 1 0 0[0m
+[0;32mI (12202) LED_BREATH: Random: 1 1 1[0m
+[0;32mI (13512) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (14422) LED_BREATH: Random: 0 0 0[0m
+[0;32mI (15332) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (16642) LED_BREATH: Random: 1 0 0[0m
+[0;32mI (18362) LED_BREATH: Random: 0 1 1[0m
+[0;32mI (19272) LED_BREATH: Random: 1 1 1[0m
+[0;32mI (20992) LED_BREATH: Random: 0 0 0[0m
+[0;32mI (22302) LED_BREATH: Random: 1 1 0[0m
+[0;32mI (23612) LED_BREATH: Random: 1 0 1[0m
+[0;32mI (24922) LED_BREATH: Random: 0 0 0[0m
+[0;32mI (25832) LED_BREATH: Random: 1 0 0[0m
+[0;32mI (27142) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (28052) LED_BREATH: Random: 0 1 1[0m
+[0;32mI (28962) LED_BREATH: Random: 1 1 1[0m
+[0;32mI (29462) LED_BREATH: Random: 1 1 1[0m
+[0;32mI (30772) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (31272) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (32992) LED_BREATH: Random: 1 1 0[0m
+[0;32mI (33902) LED_BREATH: Random: 1 0 0[0m
+[0;32mI (34812) LED_BREATH: Random: 1 1 0[0m
+[0;32mI (35722) LED_BREATH: Random: 1 0 0[0m
+[0;32mI (36632) LED_BREATH: Random: 1 1 0[0m
+[0;32mI (37542) LED_BREATH: Random: 1 1 1[0m
+[0;32mI (39262) LED_BREATH: Random: 0 0 0[0m
+[0;32mI (40172) LED_BREATH: Random: 0 1 0[0m
+[0;32mI (41482) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (42392) LED_BREATH: Random: 1 0 1[0m
+[0;32mI (43702) LED_BREATH: Random: 0 1 1[0m
+[0;32mI (44612) LED_BREATH: Random: 0 1 0[0m
+[0;32mI (45922) LED_BREATH: Random: 1 1 1[0m
+[0;32mI (46422) LED_BREATH: Random: 1 1 1[0m
+[0;32mI (47732) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (48232) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (49952) LED_BREATH: Random: 1 1 0[0m
+[0;32mI (50862) LED_BREATH: Random: 0 1 0[0m
+[0;32mI (51772) LED_BREATH: Random: 0 1 1[0m
+[0;32mI (52682) LED_BREATH: Random: 0 1 0[0m
+[0;32mI (53592) LED_BREATH: Random: 0 1 1[0m
+[0;32mI (54502) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (55812) LED_BREATH: Random: 0 1 0[0m
+[0;32mI (56722) LED_BREATH: Random: 1 1 0[0m
+[0;32mI (57222) LED_BREATH: Random: 1 1 0[0m
+[0;32mI (58532) LED_BREATH: Random: 0 1 1[0m
+[0;32mI (59442) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (59942) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (60852) LED_BREATH: Random: 0 0 0[0m
+[0;32mI (61762) LED_BREATH: Random: 0 1 0[0m
+[0;32mI (63482) LED_BREATH: Random: 1 0 1[0m
+[0;32mI (64392) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (65302) LED_BREATH: Random: 0 1 1[0m
+[0;32mI (66212) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (67122) LED_BREATH: Random: 0 0 0[0m
+[0;32mI (68032) LED_BREATH: Random: 1 0 0[0m
+[0;32mI (68942) LED_BREATH: Random: 1 1 0[0m
+[0;32mI (70252) LED_BREATH: Random: 1 0 1[0m
+[0;32mI (71972) LED_BREATH: Random: 0 1 0[0m
+[0;32mI (73692) LED_BREATH: Random: 1 0 1[0m
+[0;32mI (74192) LED_BREATH: Random: 1 0 1[0m
+[0;32mI (75502) LED_BREATH: Random: 1 1 0[0m
+[0;32mI (76812) LED_BREATH: Random: 0 1 1[0m
+[0;32mI (77722) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (78222) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (79132) LED_BREATH: Random: 0 1 1[0m
+[0;32mI (80042) LED_BREATH: Random: 1 1 1[0m
+[0;32mI (80952) LED_BREATH: Random: 0 1 1[0m
+[0;32mI (81862) LED_BREATH: Random: 1 1 1[0m
+[0;32mI (83172) LED_BREATH: Random: 0 1 0[0m
+[0;32mI (84082) LED_BREATH: Random: 0 1 1[0m
+[0;32mI (84992) LED_BREATH: Random: 1 1 1[0m
+[0;32mI (85902) LED_BREATH: Random: 1 1 0[0m
+[0;32mI (87212) LED_BREATH: Random: 1 0 1[0m
+[0;32mI (88522) LED_BREATH: Random: 0 0 0[0m
+ DIO
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a918h ( 43288) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a940 vaddr=3ffb0000 size=02450h (  9296) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001cd98 vaddr=40080000 size=03280h ( 12928) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=152f0h ( 86768) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=00035318 vaddr=40083280 size=0a284h ( 41604) load[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003f5a4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (167) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (167) boot: Disabling RNG early entropy source...[0m
+[0;32mI (178) cpu_start: Multicore app[0m
+[0;32mI (187) cpu_start: Pro cpu start user code[0m
+[0;32mI (187) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (187) app_init: Application information:[0m
+[0;32mI (187) app_init: Project name:     HelloWorld[0m
+[0;32mI (191) app_init: App version:      9bc9b1a[0m
+[0;32mI (195) app_init: Compile time:     Oct  2 2025 09:14:38[0m
+[0;32mI (200) app_init: ELF file SHA256:  1abbd4351...[0m
+[0;32mI (204) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (208) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (212) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (216) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (220) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (226) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (231) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (236) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (242) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (247) heap_init: At 4008D504 len 00012AFC (74 KiB): IRAM[0m
+[0;32mI (254) spi_flash: detected chip: generic[0m
+[0;32mI (256) spi_flash: flash io: dio[0m
+[0;33mW (259) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (272) main_task: Started on CPU0[0m
+[0;32mI (282) main_task: Calling app_main()[0m
+[0;32mI (282) LED_BREATH: LED PWM initialization completed[0m
+[0;32mI (282) main_task: Returned from app_main()[0m
+[0;32mI (1102) LED_BREATH: Random: 0 1 1[0m
+[0;32mI (2012) LED_BREATH: Random: 0 1 0[0m
+[0;32mI (2922) LED_BREATH: Random: 0 0 0[0m
+[0;32mI (4232) LED_BREATH: Random: 0 1 1[0m
+[0;32mI (5142) LED_BREATH: Random: 1 1 1[0m
+[0;32mI (6452) LED_BREATH: Random: 0 1 0[0m
+[0;32mI (6952) LED_BREATH: Random: 0 1 0[0m
+[0;32mI (7862) LED_BREATH: Random: 1 1 0[0m
+[0;32mI (9582) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (10892) LED_BREATH: Random: 1 0 0[0m
+[0;32mI (12202) LED_BREATH: Random: 1 1 1[0m
+[0;32mI (13512) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (14422) LED_BREATH: Random: 0 0 0[0m
+[0;32mI (15332) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (16642) LED_BREATH: Random: 1 0 0[0m
+[0;32mI (18362) LED_BREATH: Random: 0 1 1[0m
+[0;32mI (19272) LED_BREATH: Random: 1 1 1[0m
+[0;32mI (20992) LED_BREATH: Random: 0 0 0[0m
+[0;32mI (22302) LED_BREATH: Random: 1 1 0[0m
+[0;32mI (23612) LED_BREATH: Random: 1 0 1[0m
+[0;32mI (24922) LED_BREATH: Random: 0 0 0[0m
+[0;32mI (25832) LED_BREATH: Random: 1 0 0[0m
+[0;32mI (27142) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (28052) LED_BREATH: Random: 0 1 1[0m
+[0;32mI (28962) LED_BREATH: Random: 1 1 1[0m
+[0;32mI (29462) LED_BREATH: Random: 1 1 1[0m
+[0;32mI (30772) LED_BREATH: Random: 0 0 1[0m
+[0;32mI (31272) LED_BREATH: Random: 0 0 1[0m

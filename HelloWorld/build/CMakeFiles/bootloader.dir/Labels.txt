@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/jirasin Worasiri/lab9/Week-09-Special_topics_2568/HelloWorld/build/CMakeFiles/bootloader
+C:/jirasin Worasiri/lab9/Week-09-Special_topics_2568/HelloWorld/build/CMakeFiles/bootloader.rule
+C:/jirasin Worasiri/lab9/Week-09-Special_topics_2568/HelloWorld/build/CMakeFiles/bootloader-complete.rule
+C:/jirasin Worasiri/lab9/Week-09-Special_topics_2568/HelloWorld/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/jirasin Worasiri/lab9/Week-09-Special_topics_2568/HelloWorld/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/jirasin Worasiri/lab9/Week-09-Special_topics_2568/HelloWorld/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/jirasin Worasiri/lab9/Week-09-Special_topics_2568/HelloWorld/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/jirasin Worasiri/lab9/Week-09-Special_topics_2568/HelloWorld/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/jirasin Worasiri/lab9/Week-09-Special_topics_2568/HelloWorld/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/jirasin Worasiri/lab9/Week-09-Special_topics_2568/HelloWorld/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

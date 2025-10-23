@@ -1,0 +1,59 @@
+Command: ninja flash
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D "C:\jirasin Worasiri\lab9\Week-09-Special_topics_2568\HelloWorld\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/horiz/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/jirasin Worasiri/lab9/Week-09-Special_topics_2568/HelloWorld/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/HelloWorld.c.obj
+[5/10] Linking C static library esp-idf\main\libmain.a
+[6/10] Generating esp-idf/esp_system/ld/sections.ld
+[7/10] Linking CXX executable HelloWorld.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.10.dev2
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/jirasin Worasiri/lab9/Week-09-Special_topics_2568/HelloWorld/build/HelloWorld.bin
+[9/10] C:\Windows\system32\cmd.exe /C "cd /D "C:\jirasin Worasiri\lab9\Week-09-Special_topics_2568\HelloWorld\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/horiz/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/jirasin Worasiri/lab9/Week-09-Special_topics_2568/HelloWorld/build/partition_table/partition-table.bin" "C:/jirasin Worasiri/lab9/Week-09-Special_topics_2568/HelloWorld/build/HelloWorld.bin""
+HelloWorld.bin binary size 0x2dd90 bytes. Smallest app partition is 0x100000 bytes. 0xd2270 bytes (82%) free.
+[9/10] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\horiz\esp\v5.5.1\esp-idf\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Users/horiz/esp/v5.5.1/esp-idf -D SERIAL_TOOL=C:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;C:/Users/horiz/esp/v5.5.1/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=C:/jirasin Worasiri/lab9/Week-09-Special_topics_2568/HelloWorld/build" -P C:/Users/horiz/esp/v5.5.1/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM8 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 HelloWorld.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.10.dev2
+Serial port COM8
+Connecting.........
+Chip is ESP32-D0WD-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 94:b5:55:f8:2d:6c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0003dfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26240 bytes to 16486...
+Writing at 0x00001000... (50 %)
+Writing at 0x000075fb... (100 %)
+Wrote 26240 bytes (16486 compressed) at 0x00001000 in 0.9 seconds (effective 235.4 kbit/s)...
+Hash of data verified.
+Compressed 187792 bytes to 101261...
+Writing at 0x00010000... (14 %)
+Writing at 0x0001cb3e... (28 %)
+Writing at 0x000224e6... (42 %)
+Writing at 0x000284c6... (57 %)
+Writing at 0x0002f9c9... (71 %)
+Writing at 0x000365c3... (85 %)
+Writing at 0x0003c87e... (100 %)
+Wrote 187792 bytes (101261 compressed) at 0x00010000 in 3.0 seconds (effective 502.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 346.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

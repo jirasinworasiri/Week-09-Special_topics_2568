@@ -1,0 +1,339 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe c:\Users\horiz\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM8 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\jirasin Worasiri\lab9\Week-09-Special_topics_2568\HelloWorld\build\HelloWorld.elf C:\jirasin Worasiri\lab9\Week-09-Special_topics_2568\HelloWorld\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'c:\Users\horiz\esp\v5.5.1\esp-idf\tools\idf.py'
+de       : DIO
+[0;32mI (41) bo�ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  2 2025 09:15:02[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a2b0h ( 41648) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=0001a2d8 vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001c6d8 vaddr=40080000 size=03940h ( 14656) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=146a8h ( 83624) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=000346d0 vaddr=40083940 size=09670h ( 38512) load[0m
+[0;32mI (157) esp_image: segment 5: paddr=0003dd48 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (164) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (164) boot: Disabling RNG early entropy source...[0m
+[0;32mI (176) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (184) app_init: Application information:[0m
+[0;32mI (184) app_init: Project name:     HelloWorld[0m
+[0;32mI (188) app_init: App version:      9bc9b1a[0m
+[0;32mI (192) app_init: Compile time:     Oct  2 2025 09:14:38[0m
+[0;32mI (197) app_init: ELF file SHA256:  af2b1522b...[0m
+[0;32mI (202) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (205) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (209) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (213) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (217) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (228) heap_init: At 3FFB2CC0 len 0002D340 (180 KiB): DRAM[0m
+[0;32mI (234) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (239) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (245) heap_init: At 4008CFB0 len 00013050 (76 KiB): IRAM[0m
+[0;32mI (251) spi_flash: detected chip: generic[0m
+[0;32mI (254) spi_flash: flash io: dio[0m
+[0;33mW (257) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (269) main_task: Started on CPU0[0m
+[0;32mI (279) main_task: Calling app_main()[0m
+[0;32mI (279) LED_PATTERNS: LED initialization completed[0m
+[0;32mI (279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (279) main_task: Returned from app_main()[0m
+[0;32mI (779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (1279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (1779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (2279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (2779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (3279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (3779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (4279) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (4779) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (5279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (5779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (6279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (6779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (7279) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (7779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (8279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (8779) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (9279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (9779) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (10279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (10779) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (11279) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (11779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (12279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (12779) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (13279) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (13779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (14279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (14779) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (15279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (15779) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (16279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (16779) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (17279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (17779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (18279) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (18779) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (19279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (19779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (20279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (20779) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (21279) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (21779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (22279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (22779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (23279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (23779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (24279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (24779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (25279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (25779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (26279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (26779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (27279) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (27779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (28279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (28779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (29279) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (29779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (30279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (30779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (31279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (31779) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (32279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (32779) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (33279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (33779) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (34279) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (34779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (35279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (35779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (36279) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (36779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (37279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (37779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (38279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (38779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (39279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (39779) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (40279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (40779) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (41279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (41779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (42279) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (42779) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (43279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (43779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (44279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (44779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (45279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (45779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (46279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (46779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (47279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (47779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (48279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (48779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (49279) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (49779) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (50279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (50779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (51279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (51779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (52279) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (52779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (53279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (53779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (54279) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (54779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (55279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (55779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (56279) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (56779) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (57279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (57779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (58279) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (58779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (59279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (59779) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (60279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (60779) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (61279) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (61779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (62279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (62779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (63279) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (63779) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (64279) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (64779) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (65279) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (65779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (66279) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (66779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (67279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (67779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (68279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (68779) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (69279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (69779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (70279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (70779) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (71279) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (71779) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (72279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (72779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (73279) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (73779) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (74279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (74779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (75279) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (75779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (76279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (76779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (77279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (77779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (78279) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (78779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (79279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (79779) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (80279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (80779) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (81279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (81779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (82279) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (82779) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (83279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (83779) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (84279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (84779) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (85279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (85779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (86279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (86779) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (87279) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (87779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (88279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (88779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (89279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (89779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (90279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (90779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (91279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (91779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (92279) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (92779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (93279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (93779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (94279) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (94779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (95279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (95779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (96279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (96779) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (97279) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (97779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (98279) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (98779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (99279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (99779) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (100279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (100779) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (101279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (101779) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (102279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (102779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (103279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (103779) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (104279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (104779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (105279) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (105779) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (106279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (106779) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (107279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (107779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (108279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (108779) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (109279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (109779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (110279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (110779) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (111279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (111779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (112279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (112779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (113279) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (113779) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (114279) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (114779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (115279) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (115779) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (116279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (116779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (117279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (117779) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (118279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (118779) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (119279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (119779) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (120279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (120779) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (121279) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (121779) LED_PATTERNS: Random: 0 0 1[0m
+[0;32mI (122279) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (122779) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (123279) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (123779) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (124279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (124779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (125279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (125779) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (126279) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (126779) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (127279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (127779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (128279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (128779) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (129279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (129779) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (130279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (130779) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (131279) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (131779) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (132279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (132779) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (133279) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (133779) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (134279) LED_PATTERNS: Random: 0 0 0[0m
+[0;32mI (134779) LED_PATTERNS: Random: 1 0 0[0m
+[0;32mI (135279) LED_PATTERNS: Random: 1 1 0[0m
+[0;32mI (135779) LED_PATTERNS: Random: 0 1 1[0m
+[0;32mI (136279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (136779) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (137279) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (137779) LED_PATTERNS: Random: 1 1 1[0m
+[0;32mI (138279) LED_PATTERNS: Random: 1 0 1[0m
+[0;32mI (138779) LED_PATTERNS: Random: 0 1 0[0m
+[0;32mI (139279) LED_PATTERNS: Random: 0 1 1[0m

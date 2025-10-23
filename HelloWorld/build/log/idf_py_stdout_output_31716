@@ -1,0 +1,1614 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe c:\Users\horiz\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM8 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\jirasin Worasiri\lab9\Week-09-Special_topics_2568\HelloWorld\build\HelloWorld.elf C:\jirasin Worasiri\lab9\Week-09-Special_topics_2568\HelloWorld\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'c:\Users\horiz\esp\v5.5.1\esp-idf\tools\idf.py'
+��      : DIO
+[0;32mI (41) bo�ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  2 2025 09:15:02[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a810h ( 43024) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a838 vaddr=3ffb0000 size=02450h (  9296) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001cc90 vaddr=40080000 size=03388h ( 13192) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1522ch ( 86572) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=00035254 vaddr=40083388 size=09f38h ( 40760) load[0m
+[0;32mI (160) esp_image: segment 5: paddr=0003f194 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (167) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (167) boot: Disabling RNG early entropy source...[0m
+[0;32mI (178) cpu_start: Multicore app[0m
+[0;32mI (186) cpu_start: Pro cpu start user code[0m
+[0;32mI (186) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (186) app_init: Application information:[0m
+[0;32mI (186) app_init: Project name:     HelloWorld[0m
+[0;32mI (191) app_init: App version:      9bc9b1a[0m
+[0;32mI (195) app_init: Compile time:     Oct  2 2025 09:14:38[0m
+[0;32mI (200) app_init: ELF file SHA256:  63b1ec99e...[0m
+[0;32mI (204) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (208) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (212) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (216) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (220) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (226) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (231) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (236) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (241) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (247) heap_init: At 4008D2C0 len 00012D40 (75 KiB): IRAM[0m
+[0;32mI (254) spi_flash: detected chip: generic[0m
+[0;32mI (256) spi_flash: flash io: dio[0m
+[0;33mW (259) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (272) main_task: Started on CPU0[0m
+[0;32mI (282) main_task: Calling app_main()[0m
+[0;32mI (282) LED_BREATH: LED PWM initialization completed[0m
+[1;31mE (282) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (282) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (292) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (302) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (312) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (322) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (332) LED_BREATH: Random: 0 1 1[0m
+[0;32mI (332) main_task: Returned from app_main()[0m
+[1;31mE (832) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (832) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (832) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (842) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (852) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (852) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (862) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (1372) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (1372) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (1372) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (1382) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (1392) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (1392) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (1412) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (1912) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (1912) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (1912) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (1922) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (1932) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (1932) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (1952) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (2452) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (2452) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (2452) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (2462) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (2472) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (2472) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (2492) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (2992) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (2992) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (2992) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (3002) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (3012) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (3012) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (3032) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (3532) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (3532) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (3532) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (3542) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (3552) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (3552) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (3572) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (4072) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (4072) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (4072) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (4082) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (4092) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (4092) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (4112) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (4612) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (4612) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (4612) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (4622) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (4632) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (4632) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (4652) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (5152) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (5152) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (5152) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (5162) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (5172) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (5172) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (5192) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (5692) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (5692) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (5692) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (5702) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (5712) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (5712) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (5732) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (6232) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (6232) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (6232) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (6242) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (6252) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (6252) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (6272) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (6772) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (6772) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (6772) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (6782) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (6792) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (6792) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (6812) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (7312) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (7312) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (7312) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (7322) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (7332) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (7332) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (7352) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (7852) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (7852) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (7852) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (7862) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (7872) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (7872) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (7892) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (8392) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (8392) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (8392) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (8402) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (8412) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (8412) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (8432) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (8932) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (8932) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (8932) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (8942) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (8952) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (8952) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (8972) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (9472) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (9472) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (9472) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (9482) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (9492) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (9492) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (9512) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (10012) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (10012) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (10012) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (10022) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (10032) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (10032) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (10052) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (10552) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (10552) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (10552) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (10562) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (10572) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (10572) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (10592) LED_BREATH: Random: 1 0 1[0m
+[1;31mE (11092) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (11092) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (11092) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (11102) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (11112) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (11112) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (11132) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (11632) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (11632) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (11632) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (11642) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (11652) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (11652) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (11672) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (12172) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (12172) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (12172) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (12182) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (12192) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (12192) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (12212) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (12712) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (12712) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (12712) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (12722) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (12732) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (12732) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (12752) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (13252) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (13252) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (13252) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (13262) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (13272) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (13272) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (13292) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (13792) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (13792) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (13792) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (13802) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (13812) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (13812) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (13832) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (14332) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (14332) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (14332) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (14342) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (14352) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (14352) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (14372) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (14872) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (14872) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (14872) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (14882) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (14892) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (14892) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (14912) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (15412) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (15412) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (15412) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (15422) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (15432) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (15432) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (15452) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (15952) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (15952) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (15952) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (15962) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (15972) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (15972) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (15992) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (16492) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (16492) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (16492) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (16502) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (16512) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (16512) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (16532) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (17032) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (17032) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (17032) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (17042) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (17052) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (17052) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (17072) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (17572) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (17572) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (17572) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (17582) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (17592) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (17592) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (17612) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (18112) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (18112) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (18112) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (18122) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (18132) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (18132) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (18152) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (18652) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (18652) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (18652) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (18662) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (18672) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (18672) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (18692) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (19192) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (19192) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (19192) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (19202) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (19212) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (19212) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (19232) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (19732) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (19732) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (19732) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (19742) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (19752) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (19752) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (19772) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (20272) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (20272) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (20272) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (20282) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (20292) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (20292) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (20312) LED_BREATH: Random: 1 0 1[0m
+[1;31mE (20812) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (20812) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (20812) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (20822) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (20832) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (20832) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (20852) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (21352) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (21352) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (21352) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (21362) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (21372) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (21372) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (21392) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (21892) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (21892) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (21892) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (21902) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (21912) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (21912) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (21932) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (22432) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (22432) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (22432) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (22442) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (22452) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (22452) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (22472) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (22972) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (22972) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (22972) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (22982) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (22992) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (22992) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (23012) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (23512) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (23512) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (23512) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (23522) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (23532) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (23532) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (23552) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (24052) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (24052) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (24052) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (24062) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (24072) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (24072) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (24092) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (24592) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (24592) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (24592) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (24602) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (24612) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (24612) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (24632) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (25132) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (25132) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (25132) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (25142) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (25152) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (25152) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (25172) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (25672) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (25672) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (25672) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (25682) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (25692) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (25692) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (25712) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (26212) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (26212) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (26212) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (26222) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (26232) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (26232) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (26252) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (26752) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (26752) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (26752) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (26762) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (26772) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (26772) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (26792) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (27292) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (27292) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (27292) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (27302) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (27312) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (27312) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (27332) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (27832) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (27832) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (27832) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (27842) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (27852) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (27852) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (27872) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (28372) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (28372) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (28372) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (28382) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (28392) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (28392) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (28412) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (28912) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (28912) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (28912) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (28922) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (28932) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (28932) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (28952) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (29452) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (29452) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (29452) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (29462) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (29472) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (29472) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (29492) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (29992) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (29992) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (29992) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (30002) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (30012) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (30012) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (30032) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (30532) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (30532) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (30532) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (30542) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (30552) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (30552) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (30572) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (31072) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (31072) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (31072) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (31082) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (31092) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (31092) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (31112) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (31612) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (31612) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (31612) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (31622) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (31632) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (31632) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (31652) LED_BREATH: Random: 1 0 1[0m
+[1;31mE (32152) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (32152) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (32152) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (32162) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (32172) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (32172) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (32192) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (32692) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (32692) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (32692) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (32702) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (32712) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (32712) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (32732) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (33232) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (33232) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (33232) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (33242) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (33252) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (33252) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (33272) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (33772) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (33772) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (33772) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (33782) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (33792) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (33792) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (33812) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (34312) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (34312) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (34312) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (34322) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (34332) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (34332) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (34352) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (34852) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (34852) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (34852) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (34862) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (34872) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (34872) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (34892) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (35392) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (35392) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (35392) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (35402) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (35412) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (35412) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (35432) LED_BREATH: Random: 1 0 1[0m
+[1;31mE (35932) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (35932) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (35932) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (35942) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (35952) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (35952) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (35972) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (36472) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (36472) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (36472) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (36482) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (36492) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (36492) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (36512) LED_BREATH: Random: 1 0 1[0m
+[1;31mE (37012) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (37012) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (37012) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (37022) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (37032) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (37032) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (37052) LED_BREATH: Random: 1 0 1[0m
+[1;31mE (37552) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (37552) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (37552) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (37562) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (37572) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (37572) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (37592) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (38092) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (38092) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (38092) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (38102) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (38112) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (38112) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (38132) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (38632) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (38632) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (38632) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (38642) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (38652) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (38652) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (38672) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (39172) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (39172) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (39172) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (39182) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (39192) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (39192) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (39212) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (39712) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (39712) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (39712) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (39722) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (39732) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (39732) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (39752) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (40252) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (40252) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (40252) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (40262) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (40272) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (40272) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (40292) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (40792) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (40792) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (40792) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (40802) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (40812) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (40812) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (40832) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (41332) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (41332) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (41332) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (41342) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (41352) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (41352) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (41372) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (41872) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (41872) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (41872) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (41882) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (41892) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (41892) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (41912) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (42412) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (42412) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (42412) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (42422) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (42432) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (42432) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (42452) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (42952) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (42952) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (42952) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (42962) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (42972) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (42972) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (42992) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (43492) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (43492) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (43492) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (43502) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (43512) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (43512) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (43532) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (44032) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (44032) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (44032) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (44042) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (44052) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (44052) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (44072) LED_BREATH: Random: 1 0 1[0m
+[1;31mE (44572) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (44572) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (44572) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (44582) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (44592) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (44592) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (44612) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (45112) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (45112) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (45112) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (45122) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (45132) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (45132) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (45152) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (45652) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (45652) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (45652) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (45662) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (45672) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (45672) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (45692) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (46192) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (46192) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (46192) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (46202) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (46212) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (46212) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (46232) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (46732) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (46732) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (46732) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (46742) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (46752) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (46752) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (46772) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (47272) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (47272) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (47272) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (47282) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (47292) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (47292) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (47312) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (47812) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (47812) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (47812) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (47822) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (47832) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (47832) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (47852) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (48352) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (48352) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (48352) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (48362) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (48372) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (48372) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (48392) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (48892) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (48892) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (48892) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (48902) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (48912) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (48912) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (48932) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (49432) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (49432) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (49432) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (49442) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (49452) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (49452) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (49472) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (49972) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (49972) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (49972) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (49982) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (49992) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (49992) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (50012) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (50512) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (50512) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (50512) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (50522) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (50532) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (50532) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (50552) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (51052) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (51052) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (51052) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (51062) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (51072) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (51072) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (51092) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (51592) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (51592) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (51592) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (51602) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (51612) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (51612) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (51632) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (52132) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (52132) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (52132) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (52142) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (52152) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (52152) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (52172) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (52672) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (52672) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (52672) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (52682) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (52692) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (52692) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (52712) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (53212) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (53212) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (53212) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (53222) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (53232) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (53232) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (53252) LED_BREATH: Random: 1 0 1[0m
+[1;31mE (53752) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (53752) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (53752) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (53762) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (53772) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (53772) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (53792) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (54292) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (54292) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (54292) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (54302) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (54312) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (54312) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (54332) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (54832) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (54832) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (54832) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (54842) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (54852) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (54852) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (54872) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (55372) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (55372) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (55372) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (55382) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (55392) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (55392) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (55412) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (55912) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (55912) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (55912) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (55922) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (55932) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (55932) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (55952) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (56452) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (56452) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (56452) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (56462) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (56472) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (56472) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (56492) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (56992) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (56992) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (56992) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (57002) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (57012) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (57012) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (57032) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (57532) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (57532) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (57532) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (57542) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (57552) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (57552) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (57572) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (58072) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (58072) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (58072) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (58082) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (58092) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (58092) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (58112) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (58612) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (58612) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (58612) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (58622) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (58632) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (58632) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (58652) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (59152) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (59152) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (59152) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (59162) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (59172) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (59172) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (59192) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (59692) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (59692) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (59692) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (59702) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (59712) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (59712) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (59732) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (60232) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (60232) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (60232) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (60242) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (60252) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (60252) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (60272) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (60772) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (60772) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (60772) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (60782) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (60792) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (60792) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (60812) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (61312) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (61312) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (61312) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (61322) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (61332) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (61332) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (61352) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (61852) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (61852) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (61852) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (61862) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (61872) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (61872) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (61892) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (62392) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (62392) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (62392) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (62402) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (62412) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (62412) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (62432) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (62932) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (62932) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (62932) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (62942) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (62952) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (62952) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (62972) LED_BREATH: Random: 1 0 1[0m
+[1;31mE (63472) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (63472) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (63472) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (63482) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (63492) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (63492) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (63512) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (64012) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (64012) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (64012) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (64022) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (64032) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (64032) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (64052) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (64552) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (64552) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (64552) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (64562) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (64572) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (64572) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (64592) LED_BREATH: Random: 1 0 1[0m
+[1;31mE (65092) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (65092) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (65092) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (65102) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (65112) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (65112) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (65132) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (65632) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (65632) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (65632) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (65642) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (65652) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (65652) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (65672) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (66172) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (66172) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (66172) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (66182) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (66192) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (66192) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (66212) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (66712) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (66712) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (66712) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (66722) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (66732) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (66732) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (66752) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (67252) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (67252) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (67252) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (67262) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (67272) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (67272) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (67292) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (67792) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (67792) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (67792) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (67802) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (67812) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (67812) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (67832) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (68332) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (68332) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (68332) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (68342) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (68352) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (68352) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (68372) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (68872) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (68872) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (68872) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (68882) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (68892) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (68892) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (68912) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (69412) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (69412) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (69412) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (69422) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (69432) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (69432) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (69452) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (69952) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (69952) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (69952) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (69962) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (69972) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (69972) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (69992) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (70492) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (70492) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (70492) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (70502) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (70512) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (70512) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (70532) LED_BREATH: Random: 1 0 1[0m
+[1;31mE (71032) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (71032) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (71032) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (71042) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (71052) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (71052) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (71072) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (71572) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (71572) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (71572) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (71582) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (71592) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (71592) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (71612) LED_BREATH: Random: 1 0 1[0m
+[1;31mE (72112) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (72112) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (72112) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (72122) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (72132) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (72132) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (72152) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (72652) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (72652) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (72652) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (72662) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (72672) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (72672) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (72692) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (73192) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (73192) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (73192) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (73202) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (73212) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (73212) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (73232) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (73732) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (73732) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (73732) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (73742) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (73752) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (73752) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (73772) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (74272) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (74272) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (74272) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (74282) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (74292) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (74292) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (74312) LED_BREATH: Random: 1 0 1[0m
+[1;31mE (74812) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (74812) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (74812) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (74822) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (74832) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (74832) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (74852) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (75352) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (75352) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (75352) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (75362) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (75372) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (75372) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (75392) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (75892) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (75892) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (75892) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (75902) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (75912) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (75912) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (75932) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (76432) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (76432) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (76432) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (76442) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (76452) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (76452) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (76472) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (76972) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (76972) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (76972) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (76982) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (76992) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (76992) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (77012) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (77512) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (77512) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (77512) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (77522) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (77532) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (77532) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (77552) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (78052) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (78052) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (78052) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (78062) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (78072) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (78072) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (78092) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (78592) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (78592) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (78592) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (78602) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (78612) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (78612) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (78632) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (79132) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (79132) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (79132) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (79142) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (79152) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (79152) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (79172) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (79672) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (79672) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (79672) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (79682) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (79692) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (79692) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (79712) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (80212) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (80212) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (80212) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (80222) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (80232) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (80232) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (80252) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (80752) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (80752) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (80752) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (80762) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (80772) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (80772) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (80792) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (81292) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (81292) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (81292) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (81302) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (81312) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (81312) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (81332) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (81832) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (81832) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (81832) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (81842) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (81852) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (81852) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (81872) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (82372) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (82372) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (82372) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (82382) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (82392) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (82392) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (82412) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (82912) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (82912) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (82912) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (82922) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (82932) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (82932) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (82952) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (83452) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (83452) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (83452) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (83462) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (83472) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (83472) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (83492) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (83992) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (83992) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (83992) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (84002) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (84012) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (84012) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (84032) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (84532) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (84532) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (84532) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (84542) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (84552) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (84552) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (84572) LED_BREATH: Random: 1 0 1[0m
+[1;31mE (85072) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (85072) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (85072) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (85082) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (85092) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (85092) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (85112) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (85612) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (85612) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (85612) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (85622) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (85632) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (85632) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (85652) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (86152) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (86152) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (86152) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (86162) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (86172) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (86172) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (86192) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (86692) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (86692) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (86692) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (86702) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (86712) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (86712) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (86732) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (87232) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (87232) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (87232) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (87242) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (87252) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (87252) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (87272) LED_BREATH: Random: 1 0 1[0m
+[1;31mE (87772) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (87772) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (87772) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (87782) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (87792) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (87792) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (87812) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (88312) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (88312) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (88312) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (88322) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (88332) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (88332) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (88352) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (88852) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (88852) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (88852) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (88862) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (88872) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (88872) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (88892) LED_BREATH: Random: 1 0 1[0m
+[1;31mE (89392) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (89392) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (89392) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (89402) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (89412) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (89412) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (89432) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (89932) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (89932) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (89932) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (89942) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (89952) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (89952) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (89972) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (90472) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (90472) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (90472) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (90482) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (90492) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (90492) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (90512) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (91012) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (91012) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (91012) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (91022) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (91032) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (91032) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (91052) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (91552) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (91552) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (91552) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (91562) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (91572) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (91572) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (91592) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (92092) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (92092) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (92092) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (92102) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (92112) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (92112) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (92132) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (92632) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (92632) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (92632) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (92642) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (92652) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (92652) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (92672) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (93172) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (93172) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (93172) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (93182) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (93192) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (93192) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (93212) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (93712) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (93712) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (93712) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (93722) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (93732) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (93732) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (93752) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (94252) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (94252) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (94252) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (94262) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (94272) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (94272) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (94292) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (94792) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (94792) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (94792) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (94802) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (94812) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (94812) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (94832) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (95332) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (95332) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (95332) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (95342) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (95352) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (95352) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (95372) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (95872) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (95872) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (95872) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (95882) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (95892) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (95892) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (95912) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (96412) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (96412) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (96412) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (96422) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (96432) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (96432) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (96452) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (96952) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (96952) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (96952) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (96962) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (96972) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (96972) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (96992) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (97492) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (97492) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (97492) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (97502) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (97512) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (97512) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (97532) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (98032) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (98032) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (98032) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (98042) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (98052) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (98052) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (98072) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (98572) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (98572) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (98572) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (98582) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (98592) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (98592) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (98612) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (99112) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (99112) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (99112) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (99122) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (99132) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (99132) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (99152) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (99652) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (99652) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (99652) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (99662) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (99672) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (99672) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (99692) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (100192) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (100192) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (100192) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (100202) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (100212) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (100222) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (100232) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (100732) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (100732) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (100732) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (100742) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (100752) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (100762) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (100772) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (101272) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (101272) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (101272) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (101282) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (101292) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (101302) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (101312) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (101812) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (101812) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (101812) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (101822) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (101832) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (101842) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (101852) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (102352) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (102352) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (102352) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (102362) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (102372) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (102382) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (102392) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (102892) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (102892) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (102892) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (102902) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (102912) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (102922) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (102932) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (103432) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (103432) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (103432) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (103442) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (103452) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (103462) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (103472) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (103972) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (103972) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (103972) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (103982) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (103992) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (104002) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (104012) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (104512) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (104512) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (104512) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (104522) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (104532) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (104542) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (104552) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (105052) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (105052) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (105052) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (105062) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (105072) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (105082) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (105092) LED_BREATH: Random: 1 0 1[0m
+[1;31mE (105592) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (105592) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (105592) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (105602) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (105612) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (105622) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (105632) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (106132) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (106132) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (106132) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (106142) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (106152) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (106162) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (106172) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (106672) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (106672) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (106672) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (106682) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (106692) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (106702) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (106712) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (107212) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (107212) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (107212) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (107222) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (107232) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (107242) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (107252) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (107752) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (107752) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (107752) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (107762) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (107772) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (107782) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (107792) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (108292) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (108292) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (108292) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (108302) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (108312) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (108322) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (108332) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (108832) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (108832) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (108832) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (108842) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (108852) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (108862) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (108872) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (109372) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (109372) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (109372) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (109382) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (109392) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (109402) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (109412) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (109912) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (109912) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (109912) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (109922) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (109932) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (109942) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (109952) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (110452) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (110452) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (110452) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (110462) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (110472) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (110482) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (110492) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (110992) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (110992) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (110992) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (111002) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (111012) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (111022) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (111032) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (111532) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (111532) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (111532) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (111542) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (111552) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (111562) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (111572) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (112072) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (112072) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (112072) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (112082) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (112092) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (112102) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (112112) LED_BREATH: Random: 0 0 0[0m
+[1;31mE (112612) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (112612) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (112612) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (112622) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (112632) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (112642) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (112652) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (113152) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (113152) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (113152) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (113162) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (113172) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (113182) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (113192) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (113692) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (113692) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (113692) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (113702) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (113712) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (113722) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (113732) LED_BREATH: Random: 1 0 0[0m
+[1;31mE (114232) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (114232) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (114232) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (114242) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (114252) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (114262) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (114272) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (114772) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (114772) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (114772) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (114782) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (114792) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (114802) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (114812) LED_BREATH: Random: 1 1 0[0m
+[1;31mE (115312) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (115312) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (115312) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (115322) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (115332) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (115342) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (115352) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (115852) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (115852) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (115852) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (115862) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (115872) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (115882) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (115892) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (116392) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (116392) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (116392) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (116402) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (116412) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (116422) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (116432) LED_BREATH: Random: 0 0 1[0m
+[1;31mE (116932) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (116932) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (116932) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (116942) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (116952) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (116962) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (116972) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (117472) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (117472) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (117472) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (117482) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (117492) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (117502) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (117512) LED_BREATH: Random: 1 1 1[0m
+[1;31mE (118012) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (118012) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (118012) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (118022) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (118032) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (118042) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (118052) LED_BREATH: Random: 0 1 1[0m
+[1;31mE (118552) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (118552) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (118552) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (118562) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (118572) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (118582) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (118592) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (119092) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (119092) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (119092) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (119102) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (119112) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (119122) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (119132) LED_BREATH: Random: 0 1 0[0m
+[1;31mE (119632) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (119632) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (119632) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (119642) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[1;31mE (119652) ledc: Fade service not installed, call ledc_fade_func_install[0m
+[1;31mE (119662) ledc: ledc_set_fade_time_and_start(1603): LEDC fade channel init error, not enough memory or service not installed[0m
+[0;32mI (119672) LED_BREATH: Random: 0 0 0[0m
